@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobby Section</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>/* General body styling */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* The main container class: centers content and adds padding */
+.container {
+    max-width: 1200px; /* Limits the width on large screens */
+    margin: 0 auto;    /* Centers the container horizontally */
+    padding: 0 20px;   /* Adds padding on the sides for smaller screens */
+}
+
+/* Styling for the hobbies section */
+.hobbies-section {
+    padding: 50px 0; /* Vertical padding */
+    background-color: #fff;
+    text-align: center;
+}
+
+.hobbies-section h2 {
+    margin-bottom: 30px;
+    color: #007BFF;
+}
+
+/* Container for the list of hobby cards, using flexbox */
+.hobby-list {
+    display: flex;       /* Enables flexbox layout */
+    justify-content: center; /* Centers the cards horizontally */
+    flex-wrap: wrap;     /* Allows items to wrap to the next line on smaller screens */
+    gap: 20px;           /* Space between the cards */
+}
+
+/* Styling for individual hobby cards */
+.hobby-card {
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex: 1 1 300px; /* Flex shorthand for responsiveness (grow, shrink, base-width) */
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.hobby-card:hover {
+    transform: translateY(-5px); /* Simple hover effect */
+}
+
+.hobby-card h3 {
+    color: #333;
+    margin-top: 0;
+}
+</style>
+</head>
+
+<body>
+
+    <section class="hobbies-section">
+        <div class="container">
+            <h2>My Hobbies</h2>
+            <div class="hobby-list">
+                <div class="hobby-card">
+                    <h3>Reading</h3>
+                    <p>I enjoy reading sci-fi and fantasy novels in my free time.</p>
+                </div>
+                <div class="hobby-card">
+                    <h3>Gardening</h3>
+                    <p>I love growing my own vegetables and flowers in the backyard.</p>
+                </div>
+                <div class="hobby-card">
+                    <h3>Coding</h3>
+                    <p>Learning new programming languages and building small projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
